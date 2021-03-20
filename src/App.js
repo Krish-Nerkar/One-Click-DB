@@ -1,9 +1,9 @@
 import './App.css';
-import Prompt from './Components/Base/Base.js'
+import Base from './Components/Base/Base.js'
 
 function App() {
   return (
-    <Prompt/>
+    <Base/>
   );
 }
 
