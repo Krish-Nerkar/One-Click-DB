@@ -10,7 +10,11 @@ const Profile = () => {
 
   function print(user){
     console.log(user)
-    localStorage.setItem('userid', user["sub"]);
+    
+    let userid = user["sub"]
+    userid = userid.split('|')
+    userid = userid[1]
+    localStorage.setItem('userid', userid);
   }
 
   return (

@@ -18,8 +18,17 @@ class Home extends React.Component
     {
         console.log("======================REMOVE ROW=====================")
         var row = document.getElementById(id)
-        row.remove()
-        this.upload()
+        
+        // var txt;
+        var r = window.confirm("Press OK to Confirm Row Delete");
+        if (r == true) {
+            // txt = "You pressed OK!";
+            row.remove()
+        } else {
+            // txt = "You pressed Cancel!";
+        }
+        // document.getElementById("demo").innerHTML = txt;
+        // this.upload()
         // window.location.reload()
     }
 
@@ -136,6 +145,14 @@ class Home extends React.Component
 
     }
 
+    visit = () =>
+    {
+        console.log('=============================VISIT CALLED==============')
+        const userid = localStorage.getItem('userid')
+        let url = "https://oneclick-db.herokuapp.com/user/"+userid
+        window.open(url)
+    }
+
     render = () =>
     {
         return(
@@ -155,8 +172,12 @@ class Home extends React.Component
                         <path id="Path_3" data-name="Path 3" d="M769.442,51.162l.229-.143a3.851,3.851,0,0,1,5.306,1.214l5.554,8.888a12.648,12.648,0,0,1,1.822,8.2l1.42,2.273a2.921,2.921,0,0,1-.937,4.019l-12,7.5a2.922,2.922,0,0,1-4.024-.92L765.321,79.8l-8.547-2.929a6.475,6.475,0,0,1-3.949-8.446l.836-2.189L745.889,53.8a3.855,3.855,0,0,1,1.236-5.3l.229-.143a3.855,3.855,0,0,1,5.309,1.214l3.127,5a3.848,3.848,0,0,1,1.239-1.244l.229-.143a3.864,3.864,0,0,1,4.389.2,3.848,3.848,0,0,1,1.376-1.484l.229-.143a3.86,3.86,0,0,1,4.921.7A3.844,3.844,0,0,1,769.442,51.162ZM780.178,69.41a10.512,10.512,0,0,0-1.467-7.15h0l-5.554-8.888a1.708,1.708,0,0,0-2.352-.538l-.229.143a1.709,1.709,0,0,0-.547,2.35.5.5,0,0,1,.034.066l.015.031,1.553,2.476a1.073,1.073,0,0,1-.341,1.477h0a1.072,1.072,0,0,1-1.477-.336l-1.717-2.736a.534.534,0,0,1-.038-.074l-.014-.03-1.3-2.088a1.708,1.708,0,0,0-2.352-.538l-.229.143a1.708,1.708,0,0,0-.548,2.35l3.081,4.92a1.072,1.072,0,0,1-.343,1.477h0a1.072,1.072,0,0,1-1.478-.337l-3.082-4.921h0l-1.043-1.669A1.708,1.708,0,0,0,758.392,55l-.229.143a1.708,1.708,0,0,0-.548,2.35l4.124,6.588a1.073,1.073,0,0,1-.343,1.477h0a1.072,1.072,0,0,1-1.477-.337l-4.125-6.59h0l-4.953-7.926a1.709,1.709,0,0,0-2.353-.538l-.229.143a1.708,1.708,0,0,0-.547,2.35l8.047,12.879.012.019,3.032,4.852a1.074,1.074,0,0,1-1.822,1.139l-1.9-3.033-.255.666a4.342,4.342,0,0,0,2.648,5.662l8.906,3.052a1.068,1.068,0,0,1,.559.444l1.7,2.714a.775.775,0,0,0,1.067.244l12-7.5a.775.775,0,0,0,.248-1.067l-1.624-2.6A1.062,1.062,0,0,1,780.178,69.41Z" transform="translate(-404.929 -21.491)" fill="#fff" fill-rule="evenodd"/>
                     </svg>
                     </a>
-                    
                     <LogoutButton/>
+                    <button onClick = {this.visit} className = "logout-button json">
+                        Raw JSON
+                    </button>
+
+                    
                     
                     <table >
                         <thead>
@@ -175,13 +196,15 @@ class Home extends React.Component
                         
                      
                     </table>
-
-                    <button onClick = {this.addrow.bind(this, "", "")} className = "add">
-                        Add A Row
-                    </button>
-                    <button onClick = {this.upload} className = "save">
-                        Save
-                    </button>
+                    
+                    <div className = "footer">
+                        <button onClick = {this.addrow.bind(this, "", "")} className = "add">
+                            Add A Row
+                        </button>
+                        <button onClick = {this.upload} className = "save">
+                            Save
+                        </button>
+                    </div>
                    
                     </div>
             </div>

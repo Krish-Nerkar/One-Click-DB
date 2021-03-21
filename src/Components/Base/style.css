@@ -4,6 +4,8 @@ body{
     margin-top: 4em;
     margin-left: 10em;
     margin-right: 10em;
+    margin-bottom: 0;
+
     /* border: 10px solid green; */
 }
 
@@ -171,10 +173,26 @@ logout-button.ghost {
 .vertical-center {
   /* margin: 0; */
   /* position: absolute; */
-  margin-left: 56em;
+  /* margin-left: 20em; */
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+float: right;
+    margin-top: 2.5em;
+
+/* margin-right: ; */
+
+}
+
+.json{
+    margin-left: auto;
+    margin-right: 2em;
+    float: right;
+    margin-top: 2.5em;
+    background-color: #E4E4E4;
+    border: none;
+    color: #101625;
+
 }
 
 
@@ -207,11 +225,11 @@ th{
 }
 table {
     border-collapse: separate;
-    border-spacing: 1em 0.3em;
+    border-spacing: 1em 1em;
 }
 td{
     border-radius: 1em;
-    padding: 1em;
+    padding: 0.8em;
     /* background-color: white; */
     /* padding: 3em; */
 }
@@ -252,4 +270,21 @@ input{
 
 tr{
   background-color: #1a1a2e;
+}
+
+/* .footer{
+    position: fixed;
+    bottom: 0.1em;
+    margin-bottom: 0;
+} */logout-button:active {
+	transform: scale(0.95);
+}
+
+logout-button:focus {
+	outline: none;
+}
+
+logout-button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
 }
