@@ -7,7 +7,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="oneclickdb.us.auth0.com"
     clientId="a4VXpxTEwiHIgquMBG5bNd0X2tbg73Xc"
-    redirectUri={"http://localhost:3000/home"}
+    redirectUri={"http://https://one-click-db-oicc71f14-krish-nerkar.vercel.app/home"}
   >
     <App />
   </Auth0Provider>,
