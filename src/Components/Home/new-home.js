@@ -157,11 +157,11 @@ class NewHome extends React.Component
                        <span className = "black-logo">OneClick <span className = "grey-logo">Database</span> </span>
                     </a>
                     {/* <a> */}
-                    <a href = "javascript:void(0);">
+                    <a href = "#!">
                     
                     </a>
                     
-                    <a href = "javascript:void(0);">
+                    <a href = "#!">
                     <LogoutButton/>
                     <button className = "namee">Hi Krish!</button>
                     {/* <LogoutButton/> */}
@@ -182,11 +182,11 @@ class NewHome extends React.Component
                 
                 <div className = "main">
                     <div className="topnav alt" id="myTopnav">
-                    <a href = "javascript:void(0);">
+                    <a href = "#!">
                         <button className = "add" onClick = {this.addrow.bind(this, "", "")}>Add New Row +</button>
                        {/* <span class = "black-logo">OneClick <span className = "grey-logo">Database</span> </span> */}
                     </a>
-                    <a href = "javascript:void(0);">
+                    <a href = "#!">
                         <button className = "add save" onClick = {this.upload}><box-icon className = "i" name='save' ></box-icon></button>
 
 
