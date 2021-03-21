@@ -192,9 +192,7 @@ td{
   width: 50%;
 }
 
-tr:nth-child(1) {
-  background-color: #1a1a2e;
-}
+
 
 tr{
     margin-bottom: 1em;
@@ -204,15 +202,16 @@ tr{
 
 th{
     text-align: left;
+    background-color: #1A1A2E;
 
 }
 table {
     border-collapse: separate;
-    border-spacing: 1em 1.4em;
+    border-spacing: 1em 0.3em;
 }
 td{
     border-radius: 1em;
-    padding: 1.3em;
+    padding: 1em;
     /* background-color: white; */
     /* padding: 3em; */
 }
@@ -224,7 +223,13 @@ input{
     font-size: 1em;
     font-weight: 700;
 }
-
+.cross{
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
 .add{
     float: right;
     border-radius: 0.7em;
@@ -232,4 +237,19 @@ input{
     border: none;
     margin: 5em 0;
     padding: 1.4em 3em;
+}
+.save{
+    float: right;
+    border-radius: 0.7em;
+    background-color: #48b96e;
+    border: none;
+    margin: 5em 0;
+    margin-right: 2em;
+    padding: 1.4em 3em;
+}
+
+
+
+tr{
+  background-color: #1a1a2e;
 }

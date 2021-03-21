@@ -10,6 +10,7 @@ const Profile = () => {
 
   function print(user){
     console.log(user)
+    localStorage.setItem('userid', user["sub"]);
   }
 
   return (
