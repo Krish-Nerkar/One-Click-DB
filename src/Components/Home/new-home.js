@@ -86,7 +86,7 @@ class NewHome extends React.Component
 
         if (!doc.exists) {
             // console.log("NO DOCUMENT")
-            this.addrow("key", "value")
+            this.addrow("", "")
             this.upload()
         } 
         else

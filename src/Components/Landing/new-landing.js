@@ -81,7 +81,7 @@ class NewLanding extends React.Component
 
                     <div className = "pricing-container">
                         <div className = "pricing-box">
-                           <h1>5$/month</h1>
+                           <h1>$5/month</h1>
 
                            <h2>
                                Unlimited Projects<br></br>Unlimited Records<br></br>
