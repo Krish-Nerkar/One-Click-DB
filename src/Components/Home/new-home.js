@@ -41,11 +41,13 @@ class NewHome extends React.Component
         var element1 = document.createElement("input");
         element1.className = "key"
         element1.setAttribute("placeholder", "Key")
+        element1.value = key
         cell1.appendChild(element1);
         var cell2 = row.insertCell(1);
         var element2 = document.createElement("input");
         element2.className = "value"
         element2.setAttribute("placeholder", "Value")
+        element2.value = value
 
 
         cell2.appendChild(element2);
