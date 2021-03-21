@@ -21,7 +21,7 @@ class Home extends React.Component
         
         // var txt;
         var r = window.confirm("Press OK to Confirm Row Delete");
-        if (r == true) {
+        if (r === true) {
             // txt = "You pressed OK!";
             row.remove()
         } else {
@@ -140,7 +140,7 @@ class Home extends React.Component
  
         };
 
-        const res = db.collection('Users').doc(userid).set(data);
+        db.collection('Users').doc(userid).set(data);
        
 
     }

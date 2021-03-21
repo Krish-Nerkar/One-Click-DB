@@ -19,15 +19,15 @@ class NewLanding extends React.Component
         return(
             <div>
                <div class="topnav" id="myTopnav">
-                    <a href="#home" class="active" href = "/">
+                    <a class="active" href = "/">
                        <span class = "black-logo">OneClick <span className = "grey-logo">Database</span> </span>
                     </a>
                     {/* <a href="#news">News</a>
                     <a href="#contact">Contact</a>
                     <a href="#about">About</a> */}
-                    <a href="javascript:void(0);" class="icon" onClick = {this.myFunction}>
+                    {/* <a href="javascript:void(0);" class="icon" onClick = {this.myFunction}>
                         <i class="fa fa-bars"></i>
-                    </a>
+                    </a> */}
                 </div>
 
                 <div class="container">
@@ -88,7 +88,7 @@ class NewLanding extends React.Component
                                One To One Support From The Team<br></br>
                                Free Onboarding<br></br>Supreme Customisability
                                 <br/><br/><br/>
-                                <a class="gumroad-button" href="https://gum.co/RTbFP?wanted=true" target="_blank">Signup</a>
+                                <a class="gumroad-button" href="https://gum.co/RTbFP?wanted=true" target="_blank" rel="noreferrer">Signup</a>
                            </h2>
                         </div>
                         

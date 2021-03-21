@@ -14,7 +14,7 @@ class NewHome extends React.Component
         
         // var txt;
         var r = window.confirm("Press OK to Confirm Row Delete");
-        if (r == true) {
+        if (r === true) {
             // txt = "You pressed OK!";
             row.remove()
         } else {
@@ -134,7 +134,7 @@ class NewHome extends React.Component
  
         };
 
-        const res = db.collection('Users').doc(userid).set(data);
+        db.collection('Users').doc(userid).set(data);
        
 
     }
@@ -151,16 +151,17 @@ class NewHome extends React.Component
     {
         return(
             <div>
+                <Profile/>
                 <div className="topnav" id="myTopnav">
                     <a href="#home" className="active" href = "/">
                        <span className = "black-logo">OneClick <span className = "grey-logo">Database</span> </span>
                     </a>
                     {/* <a> */}
-                    <a>
+                    <a href = "">
                     
                     </a>
                     
-                    <a>
+                    <a href = "">
                     <LogoutButton/>
                     <button className = "namee">Hi Krish!</button>
                     {/* <LogoutButton/> */}
@@ -181,11 +182,11 @@ class NewHome extends React.Component
                 
                 <div className = "main">
                     <div className="topnav alt" id="myTopnav">
-                    <a>
+                    <a href = "">
                         <button className = "add" onClick = {this.addrow.bind(this, "", "")}>Add New Row +</button>
                        {/* <span class = "black-logo">OneClick <span className = "grey-logo">Database</span> </span> */}
                     </a>
-                    <a>
+                    <a href = "">
                         <button className = "add save" onClick = {this.upload}><box-icon className = "i" name='save' ></box-icon></button>
 
 
