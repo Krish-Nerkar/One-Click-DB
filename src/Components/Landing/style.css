@@ -146,12 +146,13 @@ top: 20px; */
 font-family: Poppins;
 font-style: normal;
 font-weight: 800;
-width: auto;
+/* width: auto; */
 font-size: 1.8em;
 /* line-height: 42px; */
 /* identical to box height */
 
-margin: 0;
+margin-left:3.5vw;
+float: left;
 /* padding: ; */
 color: #140324;
 }

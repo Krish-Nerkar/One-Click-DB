@@ -15,6 +15,9 @@ const Profile = () => {
     userid = userid.split('|')
     userid = userid[1]
     localStorage.setItem('userid', userid);
+    let name = user["nickname"]
+    localStorage.setItem('name', name);
+
   }
 
   return (

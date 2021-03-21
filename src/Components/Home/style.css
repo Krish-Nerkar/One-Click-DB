@@ -63,10 +63,11 @@ body{
 .topnav{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 0;
     
 }
+
 
 .center {
   margin: 0;

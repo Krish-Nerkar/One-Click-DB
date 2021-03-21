@@ -155,17 +155,15 @@ class NewHome extends React.Component
             <div>
                 <Profile/>
                 <div className="topnav" id="myTopnav">
-                    <a  className="active" href = "/">
+                    <a className="active" href = "/">
                        <span className = "black-logo">OneClick <span className = "grey-logo">Database</span> </span>
                     </a>
                     {/* <a> */}
-                    <a href = "#!">
-                    
-                    </a>
+                   
                     
                     <a href = "#!">
                     <LogoutButton/>
-                    <button className = "namee">Hi Krish!</button>
+                    <button className = "namee">Hi {localStorage.getItem('name')}!</button>
                     {/* <LogoutButton/> */}
                     {/* <LogoutButton/> */}
                     </a>
