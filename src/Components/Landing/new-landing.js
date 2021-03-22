@@ -110,7 +110,9 @@ class NewLanding extends React.Component
                     </div>
                 </div>
                     
-            
+            <div className="foot">
+                    <p> Made with ❤️ by <a href="https://twitter.com/intent/follow?screen_name=nerkar_krish" target="_blank" rel="noreferrer">Krish</a></p>
+                </div>
             </div>
         )
     }

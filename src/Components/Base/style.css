@@ -292,4 +292,18 @@ logout-button.ghost {
 
 .pricing-head{
     
+} 
+
+.foot   {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+.foot a{
+    color: #c2cf07;
 }
