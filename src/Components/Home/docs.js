@@ -1,9 +1,5 @@
 import React from 'react'
 import './style.css'
-import LogoutButton from '../Buttons/logout';
-import firestore from '../Base/firestore.js';
-import Profile from '../Buttons/profile.js'
-
 
 class Docs extends React.Component
 {
