@@ -3,8 +3,15 @@ import './style.css'
 
 class Docs extends React.Component
 {
+    url = () =>{
+         const userid = localStorage.getItem('userid')
+        let url = "https://oneclick-db.herokuapp.com/user/"+userid
+        return url
+    }
+
     render = () =>
     {
+       
         return(
             <div>
                 <div class="topnav" id="myTopnav">
@@ -24,8 +31,11 @@ class Docs extends React.Component
                 </h1>
 
                 <h2 className = "sub-doc">
-                    GET<br/><br/> work in progress...   
+                    GET <br>
+                    </br>
+                    <a target="_blank" rel="noreferrer" href = {this.url()}>{this.url()}</a><br/><br/>  
                 </h2>
+                <h2 className = "special">AND THATS IT!</h2>
             </div>
         )
     }

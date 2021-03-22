@@ -268,3 +268,28 @@ color: #140324;
   }
 }
 
+@media(max-width : 980px){
+    .namee{
+        border: 2px solid red;
+        display: none;
+    }
+
+    .add{
+      border: 10px solid black;
+    }
+}
+
+.sub-doc{
+  font-size: 2em;
+}
+
+.sub-doc a{
+  color: #d49e07;
+  font-size: 0.8em;
+}
+
+.special{
+  color: rgb(22, 180, 243);
+  font-size: 2em;
+  margin: 4vw;
+}
