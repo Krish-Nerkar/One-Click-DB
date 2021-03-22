@@ -7,7 +7,7 @@ ReactDOM.render(
   <Auth0Provider
     domain="oneclickdb.us.auth0.com"
     clientId="a4VXpxTEwiHIgquMBG5bNd0X2tbg73Xc"
-    redirectUri={"https://ocdb/home"}
+    redirectUri={"https://ocdb.ml/home"}
   >
     <App />
   </Auth0Provider>,

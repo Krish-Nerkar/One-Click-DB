@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.css'
 import LoginButton from '../Buttons/login'
+import IframeResizer from 'iframe-resizer-react'
 
 
 class NewLanding extends React.Component
@@ -73,11 +74,23 @@ class NewLanding extends React.Component
                         </div>
                     </div>
                 </div>
-
-                <div className = "pricing">
-                    <h1 className = "pricing-head">
-                        Pricing
+<div class = "testimonial">
+    <h1 className = "pricing-head">
+                        Wall Of Love
                     </h1>
+                    <IframeResizer
+                    src="https://embed.testimonial.to/w/one-click-db2?theme=dark&card=base"
+                    style={{ width: "1px", minWidth: "100%", border:'none' }}
+                    />
+                    
+                </div>
+                <div className = "pricing">
+                    <h1 style = {{color : "transparent"}}>djkjds</h1>
+                    <h1 className = "pricing-head">
+                       <span style = {{color : "#000"}}> Pricing</span>
+                    </h1>
+                    <h1 style = {{color : "transparent"}}>djkjds</h1>
+                    <h2 style = {{color : "#222",textAlign : 'center'}}>(Currently Its Free For All!)</h2>
 
                     <div className = "pricing-container">
                         <div className = "pricing-box">
@@ -91,11 +104,12 @@ class NewLanding extends React.Component
                                 <a class="gumroad-button" href="https://gum.co/RTbFP?wanted=true" target="_blank" rel="noreferrer">Signup</a>
                            </h2>
                         </div>
+
+                        <h1 style = {{color : "transparent"}}>djkjds</h1>
                         
                     </div>
                 </div>
-
-                
+                    
             
             </div>
         )

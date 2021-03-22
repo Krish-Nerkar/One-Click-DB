@@ -193,3 +193,93 @@ td{
     cursor: pointer;
     /* border: 4px solid pink; */
 }
+
+
+@media (max-width : 1100px ){
+    .header{
+        font-size: 3em;
+    }
+
+    .subtext{
+        font-size: 1.3em;
+    }
+
+    .create-button{
+        width: 10em;
+        height: 2.5em;
+    }
+
+    .icon{
+        width: 8em;
+        height: 1em;
+    }
+}
+
+@media (max-width : 976px ){
+    .pricing-box h2{
+        font-size: 1.3em;
+    }
+
+    .active{
+        /* border: 3px solid red; */
+        width: 100%;
+    }
+}
+
+@media(max-width : 680px){
+    .active{
+        /* border: 2px solid red; */
+        width: 100em;
+    }
+    .pricing-box h2{
+        font-size: 1em;
+    }
+}
+
+@media(max-width : 552px)
+{
+    .header{
+        font-size: 2.4em;
+    }
+
+    .subtext{
+        font-size: 1em;
+    }
+
+    .black-logo, .grey-logo{
+        font-size: 1.2em;
+    }
+    .pricing-box h2{
+        font-size: 0.8em;
+    }
+
+
+}
+
+.pricing{
+    margin-top: 6em;
+    background-color: #fff;
+     /* border: 10px solid red; */
+   
+}
+
+.pricing-box{
+    background-color: #1a1a1a;
+}
+
+.pricing h2{
+    color: rgb(255, 255, 255);
+}
+
+.pricing h1{
+    color: #fff;
+}
+
+.pricing-container{
+    margin-bottom: 1em;
+}
+
+.testimonial{
+    margin : 0;
+     /* border: 10px solid red; */
+}

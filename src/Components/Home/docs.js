@@ -28,7 +28,7 @@ class Docs extends React.Component
                 </h1>
 
                 <h2 className = "sub-doc">
-                    GET<br/><br/> work in progress...
+                    GET<br/><br/> work in progress...   
                 </h2>
             </div>
         )
