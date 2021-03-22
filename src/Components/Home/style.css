@@ -68,7 +68,13 @@ body{
     
 }
 
-
+.hh1{
+    margin-left: 4vw;
+}
+.sub-doc{
+    color: #ffffff;
+    margin-left: 4vw;
+}
 .center {
   margin: 0;
   position: absolute;

@@ -149,6 +149,12 @@ class NewHome extends React.Component
         window.open(url)
     }
 
+    docs = () =>
+    {
+        let url = "https://ocdb.ml/docs"
+        window.open(url)
+    }
+
     render = () =>
     {
         return(
@@ -189,8 +195,8 @@ class NewHome extends React.Component
                     <a href = "#!">
                         <button className = "add save" onClick = {this.upload}><box-icon className = "i" name='save' ></box-icon></button>
 
-
-                        <button className = "add view">View API Documentation</button>
+                        
+                        <button onClick = {this.docs} className = "add view">View API Documentation</button>
 
                         <button className = "add share" onClick = {this.visit}>Share URL 🔗</button>
 
