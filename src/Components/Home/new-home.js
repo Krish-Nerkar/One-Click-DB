@@ -17,6 +17,7 @@ class NewHome extends React.Component
         if (r === true) {
             // txt = "You pressed OK!";
             row.remove()
+            this.upload()
         } else {
             // txt = "You pressed Cancel!";
         }
@@ -42,10 +43,12 @@ class NewHome extends React.Component
         element1.className = "key"
         element1.setAttribute("placeholder", "Key")
         element1.value = key
+        element1.onchange = this.upload
         cell1.appendChild(element1);
         var cell2 = row.insertCell(1);
         var element2 = document.createElement("input");
         element2.className = "value"
+        element2.onchange = this.upload
         element2.setAttribute("placeholder", "Value")
         element2.value = value
 
@@ -193,7 +196,7 @@ class NewHome extends React.Component
                        {/* <span class = "black-logo">OneClick <span className = "grey-logo">Database</span> </span> */}
                     </a>
                     <a href = "#!">
-                        <button className = "add save" onClick = {this.upload}><box-icon className = "i" name='save' ></box-icon></button>
+                        {/* <button className = "add save" onClick = {this.upload}><box-icon className = "i" name='save' ></box-icon></button> */}
 
                         
                         <button onClick = {this.docs} className = "add view">View API Documentation</button>
