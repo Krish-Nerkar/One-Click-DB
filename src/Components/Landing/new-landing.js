@@ -76,7 +76,7 @@ class NewLanding extends React.Component
                 </div>
 <div class = "testimonial">
     <h1 className = "pricing-head">
-                        Wall Of Love
+                        Wall Of Love 🤍
                     </h1>
                     <IframeResizer
                     src="https://embed.testimonial.to/w/one-click-db2?theme=dark&card=base"
